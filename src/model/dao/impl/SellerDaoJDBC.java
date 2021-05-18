@@ -10,8 +10,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.print.attribute.standard.PrinterState;
-
 import db.DB;
 import db.DbException;
 import model.dao.SellerDao;
@@ -95,7 +93,6 @@ public class SellerDaoJDBC implements SellerDao {
 		finally {
 			DB.closeStatement(st);
 		}
-
 	}
 
 	@Override
@@ -118,8 +115,6 @@ public class SellerDaoJDBC implements SellerDao {
 		finally {
 			 DB.closeStatement(st);
 		}
-
-
 	}
 
 	@Override
@@ -236,5 +231,4 @@ public class SellerDaoJDBC implements SellerDao {
 			DB.closeResultSet(rs);
 		}
 	}
-
 }
